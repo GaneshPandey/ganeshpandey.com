@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- @author: Ganesh Pandey-->
+<!-- @email: ganeshpandey255@gmail.com-->
+<!-- https://github.com/GPandey515 -->
+<html lang="en">
+	<head>
+		<title>Ganesh Pandey - Home</title>
+
+<!-- meta tags -->		
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Ganesh Pandey, Noones, IOE, IOE Pulchowk">
+<meta name="description" content="Ganesh Pandey is a developer, founder of several online businesses, and student at IOE Pulchowk Campus.">
+<meta name="viewport" content="width=device-width">
+
+<!-- Styles -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
+<link rel="stylesheet" href="css/main.css">
+<script type='text/javascript' src='js/jquery-1.8.3.min.js'></script>
+
+<!-- og properties -->
+<meta property="og:title" content="Ganesh Pandey - Home">
+<meta property="og:url" content="http://www.ganeshpandey.com">
+<meta property="og:site_name" content="Ganesh Pandey - Home">
+<meta property="og:type" content="website">
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="sidebar">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Resume</a></li>
+					<li><a href="#">Works</a></li>
+					<li><a href="#">Projects</a></li>
+				</ul>
+			</div>
+			<div class="main-content">
+				<a href="#" data-toggle=".container" id="sidebar-toggle">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+				<div class="content">
+				<div class="top">
+					<h1 class="Ganesh-Pandey">Ganesh Pandey</h1>
+					<p class="tagline">I'm a developer and founder of several online businesses.</p>
+				<ul class="list-inline col-md-6 col-md-offset-3 social">
+					<li>
+						<a href="http://github.com/GPandey515" role="button" target="_blank" class="btn-social btn-github"><i class="fa fa-github fa-2x"></i></a>
+					</li>
+					<li>
+						<a href="http://twitter.com/_GaneshPandey" role="button" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter fa-2x"></i></a>
+					</li>
+					<li>
+						<a href="http://www.linkedin.com/np/noones" role="button" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin fa-2x"></i></a>
+					</li>
+					<li>
+						<a href="http://google.com/+GaneshKathmandu" role="button" target="_blank" class="btn-social btn-gplus"><i class="fa fa-google-plus fa-2x"></i></a>
+						</li>
+					<li>
+						<a href="http://facebook.com/white.hat.inside" role="button" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook fa-2x"></i></a>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+$(document).ready(function() {
+  $("[data-toggle]").click(function() {
+    var toggle_el = $(this).data("toggle");
+    $(toggle_el).toggleClass("open-sidebar");
+  });
+     
+});
+ 
+$(".swipe-area").swipe({
+    swipeStatus:function(event, phase, direction, distance, duration, fingers)
+        {
+            if (phase=="move" && direction =="right") {
+                 $(".container").addClass("open-sidebar");
+                 return false;
+            }
+            if (phase=="move" && direction =="left") {
+                 $(".container").removeClass("open-sidebar");
+                 return false;
+            }
+        }
+});
+	</script>
+</html>
