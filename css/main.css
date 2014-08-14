@@ -35,6 +35,7 @@ top: 0;
     width: 240px;
     height: 100%;
     left: -240px;
+    z-index: 1000;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
@@ -85,9 +86,6 @@ width: 100%;
     line-height: 160%;
 }
 .main-content #sidebar-toggle {
-    background: #216BDB;
-    border-radius: 3px;
-    display: block;
     position: relative;
     padding: 10px 7px;
     float: left;
@@ -112,4 +110,49 @@ width: 100%;
     padding-left: 1em;
     padding-right: 1em;
     margin-bottom: 2em;
+}
+
+.triangle {
+width: 0;
+height: 0;
+z-index: 1000;
+border-style: solid;
+border-width: 20px 0 20px 20px;
+border-color: transparent transparent transparent #1475B8;;
+}
+
+.line{
+    width: 20px;
+    height: 100%;
+    z-index: 999;
+    background: #1475B8;
+}
+
+.jumbotron {
+    background: 0 0;
+    text-align: center;
+    height: 100%;
+    display: table;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+p.tagline {
+    font-size: 1.2em;
+    color: #fff;
+    opacity: .6;
+    line-height: 1.25em;
+    margin: 0 0 2em;
+    font-family: 'Gloria Hallelujah',cursive;
+}
+
+h1.Ganesh-Pandey{
+    color: #fff;
+    font-size: 3.6em;
+    opacity: 1;
+    font-weight: 900;
+    font-family: Roboto,sans-serif;
+    letter-spacing: 5px
 }
