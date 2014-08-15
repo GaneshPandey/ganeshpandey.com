@@ -141,7 +141,7 @@ border-color: transparent transparent transparent #1475B8;;
 
 p.tagline {
     font-size: 1.2em;
-    color: #fff;
+    color: #000;
     opacity: .6;
     line-height: 1.25em;
     margin: 0 0 2em;
@@ -149,10 +149,20 @@ p.tagline {
 }
 
 h1.Ganesh-Pandey{
-    color: #fff;
+    color: #000;
     font-size: 3.6em;
     opacity: 1;
     font-weight: 900;
     font-family: Roboto,sans-serif;
+    letter-spacing: 5px
+}
+
+h1.Awesome{
+    color: #000;
+    font-size: 4.3em;
+    opacity: 1;
+    font-weight: bold;
+    font-family: Roboto,sans-serif;
+    font-
     letter-spacing: 5px
 }
