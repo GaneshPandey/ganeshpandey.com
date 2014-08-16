@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <!-- @author: Ganesh Pandey-->
 <!-- @email: ganeshpandey255@gmail.com-->
-<!-- https://github.com/GPandey515 -->
+<!-- @https://github.com/GPandey515 -->
+<!-- @Date: 08-16-2914 -->
 <html lang="en">
 	<head>
 		<title>Ganesh Pandey - Home</title>
@@ -30,12 +31,15 @@
 
 	<body>
 		<div class="container">
+		<div class="bg"></div>
 			<div id="sidebar">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Works</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="GaneshPandey.Resume.pdf">Resume</a></li>
+					<li><a href="http://ganeshpandey.com.np"><i class="fa fa-home"></i> Home</a></li>
+					<li><a href="#"><i class="fa fa-user"></i> About</a></li>
+					<li><a href="#"><i class="fa fa-users"></i> Works</a></li>
+					<li><a href="#"><i class="fa fa-code"></i> Projects</a></li>
+					<li><a href="GaneshPandey.Resume.pdf" target="_blank"><i class="fa fa-file"></i> Resume</a></li>
+					<li><a href="http://blog.ganeshpandey.com.np"><i class="fa fa-rss"></i> Blog</a></li>
 				</ul>
 			</div>
 			<div class="main-content">
@@ -45,10 +49,15 @@
 				
 				<!-- top start -->
 				<div id="top" class="jumbotron">
-					<h1 class="Ganesh-Pandey">Thank you for Visiting!!</h1>
-					<p class="tagline">, You can follow me on social medias, links are below</p><br/>
+					<h1 class="Ganesh-Pandey"></h1><br/><br/><br/>
+					<p class="tagline"></p>
 					<h1 class="Ganesh-Pandey">Ganesh Pandey</h1>
-					<p class="tagline">I'm a developer and founder of small online businesses. And i like to create an Awesome things!</p>
+					<br/>
+					<div class="mailchimp">
+					<form id="mc-embedded-subscribe-form" action="http://ganeshpandey.us8.list-manage.com/subscribe/post?u=9f4fc5a47ea88bbc38e469caa&amp;id=703ec5c96c" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate" class=" form-inline validate"><h2>Stay connected with me.</h2><input id="mce-EMAIL" type="email" value="" name="EMAIL" required="required" placeholder="your@email.com" class="form-control"><input id="mc-embedded-subscribe" type="submit" value="Connect" name="subscribe"   type="button" class="btn btn-default"><div style="position: absolute; left: -5000px;"><input type="text" name="b_9f4fc5a47ea88bbc38e469caa_703ec5c96c" tabindex="-1" value=""></div></form></div>
+
+					<p class="tagline">I'm a developer and founder of small online businesses.
+					<br/>And i like to create an Awesome things!</p><br/> <br/>
 				<ul class="list-inline col-md-6 col-md-offset-3 social">
 					<li>
 						<a href="http://github.com/GPandey515" role="button" target="_blank" class="btn-social btn-github"><i class="fa fa-github fa-2x"></i></a>
@@ -67,11 +76,14 @@
 					</li>
 					
 					<li>
+					<a href="http://blog.ganeshpandey.com.np" role="button" target="_blank" class="btn-social btn-blog"><i class="fa fa-rss fa-2x"></i></a>
+					</li>
+					<li>
 						<a href="http://facebook.com/white.hat.inside" role="button" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook fa-2x"></i></a>
 					</li>
 				</ul>
-				<br/><br/><br/><br/><br/><br/><br/><br/><br/>
-				<h1 class="Awesome">Be Awesome!</h1>
+
+
 				</div>
 				<!-- end of top -->
 				
@@ -82,12 +94,9 @@
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 
 <script type="text/javascript">
-	$(document).ready(function(){function a(){for(var a=0;a<$(".jumbotron").length;a++)$(".jumbotron:not(#minibio)").eq(a).height()<$(window).height()&&$(".jumbotron:not(#subscribe)").eq(a).height()<$(window).height()&&$(".jumbotron").eq(a).height($(window).height())}function b(){$("#sidebar").addClass("active"),$("#menu-toggle").addClass("active"),$(".page-wrapper").addClass("moveRight")}function c(){$("#sidebar").removeClass("active"),$("#menu-toggle").removeClass("active"),$(".page-wrapper").removeClass("moveRight")}function d(a){tallest=0,a.each(function(){thisHeight=$(this).height(),thisHeight>tallest&&(tallest=thisHeight)}),a.height(tallest)}$(".top").height($(window).height()),$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}}),$("#menu-toggle").click(function(a){a.preventDefault(),a.stopPropagation(),$("#sidebar").hasClass("active")?c():b()}),$(document).click(function(){$("#sidebar").hasClass("active")&&c()}),$("#sidebar a").click(function(){setTimeout(c,500)}),$(window).resize(function(){$(".top").height($(window).height()),a()}),$(window).width()>568&&(d($(".jumbotron#work .single-item")),d($(".jumbotron#projects .single-item")),a()),$(".btn-twitter").mouseover(function(){$(".bg").css("background","#2094ca")}),$(".btn-github").mouseover(function(){$(".bg").css("background","#4a535b")}),$(".btn-email").mouseover(function(){$(".bg").css("background","#DD4B39")}),$(".btn-linkedin").mouseover(function(){$(".bg").css("background","#0077b5")}),$(".btn-gplus").mouseover(function(){$(".bg").css("background","#DD4B39")}),$(".btn-blog").mouseover(function(){$(".bg").css("background","#CF5300")})});
-	</script>
-
-	<script type="text/javascript">
 $(document).ready(function() {
   $("[data-toggle]").click(function() {
     var toggle_el = $(this).data("toggle");
@@ -109,5 +118,6 @@ $(".swipe-area").swipe({
             }
         }
 });
-	</script>
+</script>
+
 </html>
